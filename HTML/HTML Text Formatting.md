@@ -42,7 +42,7 @@ Formatting elements were designed to display special types of text:
 
 
 
-## HTML <b> and <strong> Elements
+## HTML `<b>` and `<strong>` Elements
 
 - The HTML `<b>` element defines bold text, without any extra importance.
 
@@ -64,7 +64,7 @@ Formatting elements were designed to display special types of text:
 
 
 
-## HTML <i> and <em> Elements
+## HTML `<i>` and `<em>` Elements
 
 - The HTML `<i>` element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
 
@@ -90,7 +90,7 @@ Formatting elements were designed to display special types of text:
 
 
 
-## HTML <small> Element
+## HTML `<small>` Element
 
 The HTML `<small>` element defines smaller text:
 
@@ -104,7 +104,7 @@ The HTML `<small>` element defines smaller text:
 
 
 
-## HTML <mark> Element
+## HTML `<mark>` Element
 
 The HTML `<mark>` element defines text that should be marked or highlighted:
 
@@ -118,7 +118,7 @@ The HTML `<mark>` element defines text that should be marked or highlighted:
 
 
 
-## HTML <del> Element
+## HTML `<del>` Element
 
 The HTML `<del>` element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:
 
@@ -132,7 +132,7 @@ The HTML `<del>` element defines text that has been deleted from a document. Bro
 
 
 
-## HTML <ins> Element
+## HTML `<ins>` Element
 
 The HTML `<ins>` element defines a text that has been inserted into a document. Browsers will usually underline inserted text:
 
@@ -146,7 +146,7 @@ The HTML `<ins>` element defines a text that has been inserted into a document. 
 
 
 
-## HTML <sub> Element
+## HTML `<sub>` Element
 
 The HTML `<sub>` element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
 
@@ -160,7 +160,7 @@ The HTML `<sub>` element defines subscript text. Subscript text appears half a c
 
 
 
-## HTML <sup> Element
+## HTML `<sup>` Element
 
 The HTML `<sup>` element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:
 
