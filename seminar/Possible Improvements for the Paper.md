@@ -8,11 +8,11 @@
   
 - [ ] performance analysis for each algorithm 
 
-- [ ] referring the author: `<Author Name> et al. [Reference number]`
+- [x] referring the author: `<Author Name> et al. [Reference number]`
 
-- [ ] change the **footer** of the paper
+- [x] change the **footer** of the paper
 
-- [ ] shorten the setence
+- [ ] shorten the sentence
 
      >  “However, plenty of those don’t understand any machine learning algorithms, or only understand a bit basic, so as to permit such novices to quickly use artificial intelligence, for instance, to search out the best (machine learning) algorithm and suitable hyperparameters of this algorithm for a particular research problem, without having to know the (machine learning) algorithms themselves, a research direction called “Auto-machine learning” gradually attracted scientists’ eyeballs and has developed rapidly within the last ten years.”
 
