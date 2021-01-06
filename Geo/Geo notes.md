@@ -2,7 +2,8 @@
 
 - [Die reelle projektive Ebene](#sec1)
   - [Punkte und Geraden im R^2](#sec1.1)
-
+  - [summary](#sum1)
+  
 - projektive Transformationen
 - Dualitaet
 - Die Projektive Gerade
@@ -97,7 +98,23 @@
     l, m \in \mathscr{L}_{\mathbb{R}} \quad[p]=[l \times m]
     $$
 
-11. 
+<h3 id = "sum1">Summary</h3>
 
-    
+1. Geraden in der Zeichenebene sind durch Gleichungen der Form
+   $$
+   a x+b y+c=0
+   $$
+   X-轴： $y=0  \Rightarrow  0x+1y+0=0  \Leftrightarrow \left(\begin{array}{l}
+   0 \\
+   1 \\
+   0
+   \end{array}\right)$
 
+   Y-轴： $x=0  \Rightarrow  1x+0y+0=0  \Leftrightarrow \left(\begin{array}{l}
+   1 \\
+   0 \\
+   0
+   \end{array}\right)$
+
+
+2. 
