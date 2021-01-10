@@ -52,7 +52,7 @@ Despite considerable recent advances [13, 14, 15], all published work on SMBO st
 2. At each split point of each tree, a random subset of ⌈d · p⌉ of the d algorithm parameters is considered eligible to be split upon;
    - the split ratio p is a parameter, which we left at its default of p = 5/6
    -  A further parameter is nmin, the minimal number of data points required to be in a node if it is to be split further; we use the standard value nmin = 10. 
-3. Finally, we set the number of trees to B = 10 to keep the computational. overhead small.
+3. Finally, we set the number of trees to B = 10 to keep the computational overhead small.
 
 
 
