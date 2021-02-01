@@ -1,12 +1,12 @@
 # Possible Improvements for the Paper
 
-- [ ] adding figures 									
+- [x] adding figures 									
 
      - AutoML pipeline
        
      - different algorithms for CASH
   
-- [ ] performance analysis for each algorithm 
+- [x] performance analysis for each algorithm 
 
 - [ ] **Conclusion**:
   - compare all methods
@@ -38,6 +38,12 @@
 - [x] **Auto-WEKA & Auto-Sklearn**: 
 
   >  While citing other papers, better was is to include the name of the first author and then cite it.
+
+
+
+
+
+
 
 
 
