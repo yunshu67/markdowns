@@ -4,8 +4,8 @@
   - [Punkte und Geraden im R^2](#sec1.1)
   - [Inzidenz, Join und Meet](#sec1.2)
   - [summary](#sum1)
-  
-- projektive Transformationen
+- [projektive Transformationen](#sec2)
+  - [Die Rolle von Matrix](#sec2.1)
 - Dualitaet
 - Die Projektive Gerade
 - KegelSchinitte
@@ -250,7 +250,142 @@ $$
 
     
 
+<h1 id = "sec2">Projektive Transformationen</h1>
 
+<h3 id = "sec2.1">Die Rolle von Matrizen</h3>
+
+
+1. Rotationen und Verschiebungen
+
+   - Rotation im $R^{2}$
+     $$
+     \left(\begin{array}{l}
+     x \\
+     y
+     \end{array}\right) \mapsto\left(\begin{array}{cc}
+     \cos (\alpha) & -\sin (\alpha) \\
+     \sin (\alpha) & \cos (\alpha)
+     \end{array}\right)\left(\begin{array}{l}
+     x \\
+     y
+     \end{array}\right)
+     $$
+
+     - projektiv:
+       $$
+       \left(\begin{array}{l}
+       x \\
+       y \\
+       1
+       \end{array}\right) \mapsto\left(\begin{array}{ccc}
+       \cos (\alpha) & -\sin (\alpha) & 0 \\
+       \sin (\alpha) & \cos (\alpha) & 0 \\
+       0 & 0 & 1
+       \end{array}\right)\left(\begin{array}{l}
+       x \\
+       y \\
+       1
+       \end{array}\right)
+       $$
+       
+     
+       
+     
+   - Translation im $R^{2}$
+     $$
+     \left(\begin{array}{l}
+     x \\
+     y
+     \end{array}\right) \mapsto\left(\begin{array}{l}
+     x \\
+     y
+     \end{array}\right)+\left(\begin{array}{l}
+     t_{x} \\
+     t_{y}
+     \end{array}\right)
+     $$
+
+     - projektiv:
+       $$
+       \left(\begin{array}{l}
+       x \\
+       y \\
+       1
+       \end{array}\right) \mapsto\left(\begin{array}{lll}
+       1 & 0 & t_{x} \\
+       0 & 1 & t_{y} \\
+       0 & 0 & 1
+       \end{array}\right)\left(\begin{array}{l}
+       x \\
+       y \\
+       1
+       \end{array}\right)
+       $$
+     
+   - Affine Transformation 仿射变换
+
+     仿射变换（Affine transformation），又称仿射映射，是指在几何中，對一个向量空间进行一次线性变换并接上一个平移，变换为另一个向量空间。
+     $$
+     \left(\begin{array}{l}
+     x \\
+     y \\
+     1
+     \end{array}\right) \mapsto\left(\begin{array}{lll}
+     a & b & c \\
+     d & e & f \\
+     0 & 0 & 1
+     \end{array}\right)\left(\begin{array}{l}
+     x \\
+     y \\
+     1
+     \end{array}\right)
+     $$
+     ![image-20210202141835343](https://i.loli.net/2021/02/02/zJ37y6Ub2Q5VDwN.png)
+
+   - Allgemeine projektive Transformation
+     $$
+     \left[\left(\begin{array}{l}
+     x \\
+     y \\
+     z
+     \end{array}\right)\right] \mapsto  \left[\underbrace{\left(\begin{array}{lll}
+     a & b & c \\
+     d & e & f \\
+     g & h & i
+     \end{array}\right)}_{\operatorname{det}(M) \neq 0}\left(\begin{array}{l}
+     x \\
+     y \\
+     z
+     \end{array}\right)\right]
+     $$
+
+     - ist wohldefiniert
+     - $\tau_{M}: \mathscr{P}_{\mathbb{R}} \rightarrow \mathscr{P}_{\mathbb{R}}$
+     - führt Geraden in Geraden über
+
+     
+
+2.  Projektive Transformationen und Kollinearität
+
+   > **==Satz (2.2): Projektive Transformationen führen kollineare Punktetripel in kollineare Punktetripel über.==**
+
+   Bew:
+   Es seien $[p],[q],[r]$ drei kollineare Punkte also $\operatorname{det}(p, q, r)=0$.
+   Sei $M \in \mathbb{R}^{3 \times 3}$ mit $\operatorname{det}(M) \neq 0$.
+   Betrachte $\operatorname{det}(M p, M q, M r)$
+   $\operatorname{det}(M p, M q, M r)=\operatorname{det}(M) \cdot \operatorname{det}(p, q, r)$
+   $\Longrightarrow \operatorname{det}(M p, M q, M r)=0$
+   $\Longrightarrow[M p],[M q],[M r]$ kollinear.
+
+3. Projektive Transformation "konstruieren"
+
+   ![image-20210202145542629](https://i.loli.net/2021/02/02/eTyAc93gtDMxvUE.png)
+
+   Die Matrix $M$ ist bis auf ein Vielfaches durch Bild und Urbild von vier Punkten bestimmt.
+
+4. 
+
+   
 
 
 <h3 id = "sum1">Summary</h3>
