@@ -268,7 +268,48 @@ $$
    \end{array}\right)$
 
 
-2. 
+2. 确定非Standardeinbettung中的Ferngerade的homogen Koordinaten
+
+   Eine beliebige Ebene im $\mathbb{R}^{3}$ wird durch eine Gleichung der Form
+   $$
+   a x+b y+c z+d=0
+   $$
+   beschrieben. Die Ferngerade im zugehörigen $\mathbb{R} \mathrm{P}^{2}$ wird durch diejenige Ebene beschrieben, die im $\mathbb{R}^{3}$ parallel zur
+   Einbettungsebene liegt. Also durch
+   $$
+   a x+b y+c z=0 \text { . }
+   $$
+   Die homogenen Koordinaten einer projektiven Geraden sind durch den Normalenvektor der zugehörigen $\mathbb{R}^{3}$ -Ebene
+   gegeben. Also ist die Ferngerade $\left(\begin{array}{l}a \\ b \\ c\end{array}\right)$.
+
+3. 计算:
+
+   - `<p,q>`: 向量积
+
+   - `PxQ`: $P=\left[\begin{array}{c}x_{P} \\ y_{P} \\ z_{P}\end{array}\right], \quad Q=\left[\begin{array}{c}x_{Q} \\ y_{Q} \\ z_{Q}\end{array}\right]$,
+
+   $$
+   P \times Q=\left(\begin{array}{cc}
+   \left|\begin{array}{cc}
+   y_{P} & y_{Q} \\
+   z_{P} & z_{Q}
+   \end{array}\right| \\
+   -\left|\begin{array}{cc}
+   x_{P} & x_{Q} \\
+   z_{P} & z_{Q}
+   \end{array}\right| \\
+   \left|\begin{array}{cc}
+   x_{P} & x_{Q} \\
+   y_{P} & y_{Q}
+   \end{array}\right|
+   \end{array}\right)=\left(\begin{array}{c}
+   y_{P} z_{Q}-z_{P} y_{Q} \\
+   z_{P} x_{Q}-x_{P} z_{Q} \\
+   x_{P} y_{Q}-y_{P} x_{Q}
+   \end{array}\right)
+   $$
+
+4. 
 
 <h1 id = "sec2">Projektive Transformationen</h1>
 
