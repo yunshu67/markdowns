@@ -6,6 +6,7 @@
   - [summary](#sum1)
 - [projektive Transformationen](#sec2)
   - [Die Rolle von Matrix](#sec2.1)
+  - [Projektive Transformationen berechnen](#sec2.2)
 - Dualitaet
 - Die Projektive Gerade
 - KegelSchinitte
@@ -248,7 +249,26 @@ $$
 
     
 
-    
+<h3 id = "sum1">Summary</h3>
+
+1. Geraden in der Zeichenebene sind durch Gleichungen der Form
+   $$
+   a x+b y+c=0
+   $$
+   X-轴： $y=0  \Rightarrow  0x+1y+0=0  \Leftrightarrow \left(\begin{array}{l}
+   0 \\
+   1 \\
+   0
+   \end{array}\right)$
+
+   Y-轴： $x=0  \Rightarrow  1x+0y+0=0  \Leftrightarrow \left(\begin{array}{l}
+   1 \\
+   0 \\
+   0
+   \end{array}\right)$
+
+
+2. 
 
 <h1 id = "sec2">Projektive Transformationen</h1>
 
@@ -383,28 +403,41 @@ $$
 
    Die Matrix $M$ ist bis auf ein Vielfaches durch Bild und Urbild von vier Punkten bestimmt.
 
+
+
+<h3 id="sec2.2">Projektive Transformationen berechnen</h3>
+
+> **==Satz (2.3.): Es seien [A], [B], [C], [D] vier Punkte von denen keine drei auf einer Geraden liegen und $[A^{'}],[B^{'}],[C^{'}],[D^{'}]$ ebenso.==**
+>
+> **==Dann gibt es genau eine Äquivalenzklasse $[M]$ mit==**
+> $$
+> [M A]=[A'],[M B]=[B'],[M C]=[C'],[M D]=[D']
+> $$
+
+
+​    变换前后任意三点都不共线，则$M$唯一
+
+
+
+1. Wirkungen von Projektiven Transformationen auf Geraden
+
+   Punkte:																	Geraden:
+$\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\mathbb{R}} \\ &[p] \mapsto[M p] \end{aligned}$											$\begin{aligned} \tau: \mathscr{L}_{\mathbb{R}} & \rightarrow \mathscr{L}_{\mathbb{R}} \\ &[l] \mapsto\left[\left(M^{T}\right)^{-1} l\right] \end{aligned}$						
+
+
+2.  Freiheitsgrade zählen
+
+   Die Menge der projektiven Transformationen im $\mathbb{R} \mathbb{P}^{2}$ bildet einen 8-dimensionale "Manigfaltigkeit".
+
+3. Ueber den Tellerrand
+
+   Kollineation: Jede bijektive Abbildung auf $\mathscr{P}_{\mathbb{R}}$ ,die Geraden in Geraden überführt
+   proj. Trafo.: Multiplikation mit reeller invertierbarer $
+   3 \times 3 \text { Matrix }([p] \mapsto[M p])
+   $
+   
+   - Jede projektive Transformation ist Kollineation
+   - Über $\mathbb{R}$ ist iede Kollineation eine projektive Transformation
+
 4. 
 
-   
-
-
-<h3 id = "sum1">Summary</h3>
-
-1. Geraden in der Zeichenebene sind durch Gleichungen der Form
-   $$
-   a x+b y+c=0
-   $$
-   X-轴： $y=0  \Rightarrow  0x+1y+0=0  \Leftrightarrow \left(\begin{array}{l}
-   0 \\
-   1 \\
-   0
-   \end{array}\right)$
-
-   Y-轴： $x=0  \Rightarrow  1x+0y+0=0  \Leftrightarrow \left(\begin{array}{l}
-   1 \\
-   0 \\
-   0
-   \end{array}\right)$
-
-
-2. 
