@@ -6,8 +6,10 @@
 - [projektive Transformationen](#sec2)
   - [Die Rolle von Matrix](#sec2.1)
   - [Projektive Transformationen berechnen](#sec2.2)
-- Dualitaet
-- Die Projektive Gerade
+- [Dualitaet](#sec3)
+  - [Symmetrie zwischen Punkten und Geraden](#sec3.1)
+- [Die Projektive Gerade](#sec4)
+  - [Homogene Koordinaten im RP^1](#sec4.1)
 - KegelSchinitte
 
 
@@ -413,9 +415,65 @@ $\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\
    proj. Trafo.: Multiplikation mit reeller invertierbarer $
    3 \times 3 \text { Matrix }([p] \mapsto[M p])
    $
-   
+
    - Jede projektive Transformation ist Kollineation
    - Über $\mathbb{R}$ ist iede Kollineation eine projektive Transformation
 
+
+
+<h1 id = "sec3">Dualitaet</h1>
+
+<h3 id ="sec3.1">Symmetrie zwischen Punkten und Geraden</h3>
+
+1. Wörterbuch der Dualität
+
+   ![image-20210205101102302](https://i.loli.net/2021/02/05/VTCz9X2mLyhbWoe.png)
+
+2.  Satz von Pappos und sein Duales
+
+   ![image-20210205103157163](https://i.loli.net/2021/02/05/CQNcdWmYsHfyqD1.png)
+
+3. Satz von Pascal und dein Duales, der Satz von Brianchon
+
+   ![image-20210205103827033](https://i.loli.net/2021/02/05/Fygf9THpVd1icYj.png)
+
 4. 
 
+<h1 id = "sec4">Die Projektive Gerade</h1>
+
+<h3 id = "sec4.1">Homogene Koordinaten im RP^1</h3>
+
+1. Geometrie entlang einer Geraden im $\mathbb{R} \mathbb{P}^{2}$
+
+   ![image-20210205165028520](https://i.loli.net/2021/02/05/qF1fjQItTzkSnOB.png)
+
+   Die Punkte auf der Verbindungsgerade von $[A]$ und $[B]$ sind die Punkte der Form
+   $$
+   [P]=[\lambda A+\mu B] \quad\left(\begin{array}{l}
+   \lambda \\
+   \mu
+   \end{array}\right) \neq\left(\begin{array}{l}
+   0 \\
+   0
+   \end{array}\right)
+   $$
+   Beweis:
+   (i) $[\lambda A+\mu B]$ liegt auf $l=\operatorname{join}(A, B)$.
+   $$
+   \operatorname{det}(A, B, \lambda A+\mu B)=\operatorname{det}(A, B, \lambda A)+\operatorname{det}(A, B, \mu B)=0
+   $$
+   (ii) Jeder Punkt auf $\operatorname{join}(A, B)$ hat die Form $[\lambda A+\mu B]$. 
+
+   ​		Sei $[A],[B],[P]$ kollinear. D.h:
+
+   ​		$\left.\left(\begin{array}{lll}| & | & | \\ A & B & P \\ | & | & |\end{array}\right)\left(\begin{array}{l}x_{1} \\ x_{2} \\ x_{3}\end{array}\right)=\left(\begin{array}{l}0 \\ 0 \\ 0\end{array}\right) \begin{array}{l}\text { hat nicht- } \\ \text { triviale Lösung }\end{array}\right\}$
+
+   ​		
+
+   ​		wg. $[A] \neq[B]$, gilt $x_{3} \neq 0$, 
+
+   ​		Also $P=\lambda A+\mu B$ mit $\quad\left(\begin{array}{l}\lambda \\ \mu\end{array}\right) \neq\left(\begin{array}{l}0 \\ 0\end{array}\right)$
+
+   > <u>**Achtung subtil**</u>: die exakte Position von $[P]$ hängt von $A$ und $B$ aber nicht nur von $[A]$ und $[B]$ ab.
+
+   ![image-20210205170454773](https://i.loli.net/2021/02/06/9N8OVrBwIFLplyT.png)
