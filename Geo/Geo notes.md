@@ -10,6 +10,7 @@
   - [Symmetrie zwischen Punkten und Geraden](#sec3.1)
 - [Die Projektive Gerade](#sec4)
   - [Homogene Koordinaten im RP^1](#sec4.1)
+  - [Perspektiven und Transformationen](#sec4.2)
 - KegelSchinitte
 
 
@@ -477,3 +478,140 @@ $\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\
    > <u>**Achtung subtil**</u>: die exakte Position von $[P]$ hängt von $A$ und $B$ aber nicht nur von $[A]$ und $[B]$ ab.
 
    ![image-20210205170454773](https://i.loli.net/2021/02/06/9N8OVrBwIFLplyT.png)
+
+<h3 id = "sec4.2">Perspektiven und Transformationen</h3>
+
+1. Basiswechsel auf der Geraden im $\mathbb{R P}^{2}$
+
+   ![image-20210206151745688](https://i.loli.net/2021/02/06/MfWyp2ARGb6zkuK.png)
+   $$
+   \begin{array}{ll}
+   P=\lambda A+\mu B & A^{\prime}=\lambda_{A} A+\mu_{A} B \\
+   P=\lambda^{\prime} A^{\prime}+\mu^{\prime} B^{\prime} & B^{\prime}=\lambda_{B} A+\mu_{B} B
+   \end{array}
+   $$
+   
+
+   =>
+   $$
+   P=\lambda^{\prime}\left(\lambda_{A} A+\mu_{A} B\right) + \mu^{\prime}\left( \lambda_{B}A+\mu_{B} B\right.)
+   $$
+
+   $$
+   =\underbrace{\left(\lambda^{\prime} \lambda_{A}+\mu^{\prime} \lambda_{B}\right.}_{\lambda}) A+(\underbrace{\lambda^{\prime} \mu_{A}+\mu^{\prime} \mu_{B}}_{\mu}) B
+   $$
+
+   Also:
+   $$
+   \left(\begin{array}{l}
+   \lambda^{\prime} \\
+   \mu^{\prime}
+   \end{array}\right) \mapsto\left(\begin{array}{l}
+   \lambda \\
+   \mu
+   \end{array}\right)=\left(\begin{array}{ll}
+   \lambda_{A} & \lambda_{B} \\
+   \mu_{A} & \mu_{B}
+   \end{array}\right)\left(\begin{array}{l}
+   \lambda^{\prime} \\
+   \mu^{\prime}
+   \end{array}\right)
+   $$
+
+2. Perspektivetaet
+
+   ![image-20210206153318665](https://i.loli.net/2021/02/06/eDcoisBw5qNhmvn.png)
+   $$
+   \begin{array}{l}
+   P=\lambda A+\mu B \\
+   P^{\prime}=\lambda^{\prime} A^{\prime}+\mu^{\prime} B^{\prime}
+   \end{array}
+   $$
+   Frage:
+   wie hängt $\lambda^{\prime}, \mu^{\prime}$ von $\lambda, \mu$ ab?
+
+   **==Satz==**: Es gibt ein $\tau$ mit:
+   $$
+   \left(\begin{array}{l}
+   \lambda^{\prime} \\
+   \mu^{\prime}
+   \end{array}\right)=\left(\begin{array}{ll}
+   \tau & 0 \\
+   0 & 1
+   \end{array}\right)\left(\begin{array}{l}
+   \lambda \\
+   \mu
+   \end{array}\right)
+   $$
+   Beweis: Zeige: Es gibt ein $\tau$ so dass $X, P, P^{\prime}$ kollinear sind
+   $$
+   \begin{aligned}
+   0=\left\langle P \times P^{\prime}, X\right\rangle=&\left\langle(\lambda A+\mu B) \times\left(\lambda^{\prime} A^{\prime}+\mu^{\prime} B^{\prime}\right), X\right\rangle \\
+   =& \lambda \lambda^{\prime}\underbrace{\left\langle{A \times A^{\prime}, X}\right\rangle}_{0}+\lambda \mu^{\prime}\left\langle A \times B^{\prime}, X\right\rangle+\mu \lambda^{\prime}\left\langle B \times A^{\prime}, X\right\rangle+\mu \mu^{\prime}\underbrace{\left\langle{\left.B \times B^{\prime}, X\right\rangle}\right.}_{0}\\
+   &\Longrightarrow \lambda \mu^{\prime}\left\langle{A \times B^{\prime}, X}\right\rangle=-\mu \lambda^{\prime}\left\langle B \times A^{\prime}, X\right\rangle \Longrightarrow \frac{\lambda^{\prime}}{\mu^{\prime}}=\frac{\lambda}{\mu} \cdot \underbrace{\left(\frac{\left\langle A \times B^{\prime}, X\right\rangle}{-\left\langle A^{\prime} \times B, X\right\rangle}\right)}_{\tau})
+   \end{aligned}
+   $$
+
+3. Verkettung von Basiswechsel und Perspektivität/Projektion
+
+   ![image-20210206154502433](https://i.loli.net/2021/02/06/Y8LfCwAyaDsS62d.png)
+
+4. Die Projektive Gerade (intrinsische Definition)
+
+   ![image-20210206160129709](https://i.loli.net/2021/02/06/pKxItFqPzGyXCr8.png)
+   $$
+   \begin{array}{l}
+   \text { Homogenisierung: } \lambda \mapsto\left[\left(\begin{array}{l}
+   \lambda \\
+   1
+   \end{array}\right)\right] \\
+   \mathbb{R P}^{1}:=\frac{\mathbb{R}^{2}-\{\boldsymbol{0}\}}{\mathbb{R}-\{0\}} & \mathbb{K} \mathbb{P}^{d}:=\frac{\mathbb{K}^{d+1}-\{\boldsymbol{0}\}}{\mathbb{K}-\{0\}}
+   \end{array}
+   $$
+   Projektive Transformationen:
+   $$
+   \left(\begin{array}{l}
+   \lambda \\
+   \mu
+   \end{array}\right) \mapsto \underbrace{\left(\begin{array}{ll}
+   a & b \\
+   c & d
+   \end{array}\right)}_{\operatorname{det} \neq 0}\left(\begin{array}{l}
+   \lambda \\
+   \mu
+   \end{array}\right)
+   $$
+
+   $$
+   \tau: \mathbb{R} \mathbb{P}^{1} \rightarrow \mathbb{R} \mathbb{P}^{1}
+   $$
+
+   $$
+   [P] \mapsto[M \cdot P]
+   $$
+
+   
+
+   
+   $$
+   \begin{array}{l}
+   \mathbb{R} \stackrel{\text { hom }}{\rightarrow} \mathbb{R} \mathbb{P}^{1} \stackrel{\tau}{\rightarrow} \mathbb{R} \mathbb{P}^{1} \stackrel{\text { dehom }}{\rightarrow} \mathbb{R} \\
+   \begin{aligned}
+   x  \mapsto &\left(\begin{array}{l}
+   x \\
+   1
+   \end{array}\right)  \mapsto\underbrace{\left(\begin{array}{ll}
+   a & b \\
+   c & d
+   \end{array}\right)\left(\begin{array}{l}
+   x \\
+   1
+   \end{array}\right)}_{\left(\begin{array}{c}
+   a x+b \\
+   c x+d
+   \end{array}\right)} \mapsto \frac{a x+b}{c x+d} \\
+   
+   \end{aligned}
+   \end{array}
+   $$
+
