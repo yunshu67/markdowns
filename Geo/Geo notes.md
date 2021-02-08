@@ -11,6 +11,9 @@
 - [Die Projektive Gerade](#sec4)
   - [Homogene Koordinaten im RP^1](#sec4.1)
   - [Perspektiven und Transformationen](#sec4.2)
+  - [Doppelverhältnisse](#sec4.3)
+  - [Projektive Skalen](#sec4.4)
+  - [Harmonische Lage](#sec4.5)
 - KegelSchinitte
 
 
@@ -614,4 +617,194 @@ $\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\
    \end{aligned}
    \end{array}
    $$
+
+<h3 id = "sec4.3">Doppelverhaeltnisse</h3>
+
+> **Schreibweise:**
+> $$
+> 1.[X, Y]:=\operatorname{det}\left(\begin{array}{ll}
+> x_{1} & y_{1} \\
+> x_{2} & y_{2}
+> \end{array}\right)
+> $$
+>
+> $$
+> \begin{aligned}
+> &2.[M X, M Y] \\
+> =& \operatorname{det}\left(\begin{array}{cc}
+> \mid & \mid \\
+> M X & M Y \\
+> \mid & \mid
+> \end{array}\right) \\
+> =& \operatorname{det}\left(M \cdot\left(\begin{array}{cc}
+> \mid & \mid \\
+> X & Y \\
+> \mid & \mid
+> \end{array}\right)\right) \\
+> =& \operatorname{det}(M) \cdot[X, Y]
+> \end{aligned}
+> $$
+
+1. Definition
+
+   Definition: Seien $A, B, C, D \in \mathbb{R}^{2}-\{\mathbf{0}\}$, deren Doppelverhältnis ist definiert als:
+   $$
+   (A, B ; C, D):=\frac{[A, C][B, D]}{[A, D][B, C]}
+   $$
+   **Lemma1:** Für $\alpha, \beta, \gamma, \delta \neq 0$ ist
+   $$
+   (A, B ; C, D)=(\alpha A, \beta B ; \gamma C, \delta D)
+   $$
+
+   $$
+   \rightarrow \text { unabhängig von Repräsentanten }
+   $$
+   Beweis:
+   $(\alpha A, \beta B ; \gamma C, \delta D)=\frac{[\alpha A, \gamma C][\beta B, \delta D]}{[\alpha A, \delta D][\beta B, \gamma C]}=\frac{\alpha \beta \gamma \delta \cdot[A, C][B, D]}{\alpha \beta \gamma \delta \cdot[A, D][B, C]}=(A, B ; C, D)$
+
+   ---
+
+   **Lemma2:** Für $M \in \mathbb{R}^{2 \times 2} ; \operatorname{det}(M) \neq 0$ ist
+   $$
+   (A, B ; C, D)=(M \cdot A, M \cdot B ; M \cdot C, M \cdot D)
+   $$
+
+   $$
+   \rightarrow \text { invariant unter Transformationen }
+   $$
+
+   Beweis:
+   $(M \cdot A, M \cdot B ; M \cdot C, M \cdot D)=\frac{[M A, M C][M B, M D]}{[M A, M D][M B, M C]}=\frac{\operatorname{det}(M)^{2} \cdot[A, C][B, D]}{\operatorname{det}(M)^{2} \cdot[A, D][B, C]}=(A, B ; C, D)$
+
+   
+
+2. 
+
+   ![image-20210206212300239](https://i.loli.net/2021/02/07/SYJkmI6PUlft2c8.png)
+   $$
+   \text{where: } x-y=\operatorname{det}\left(\begin{array}{ll}
+   x & y \\
+   1 & 1
+   \end{array}\right)
+   $$
+
+3. 四条交于一点的直线的`Doppelverhaeltnis`: 
+
+   ![image-20210206213121571](https://i.loli.net/2021/02/07/V8O5xfnQX9BGZm3.png)
+
+   **Definition:** $(a, b ; c, d)$ ist das Doppelverhältnis von vier Geraden durch einen Punkt.
+
+   ​					Vier kollineare Punkte haben ein Doppelverhältnis
+$$
+\begin{aligned}
+   (A, B ; C, D) &=\left(A^{\prime}, B^{\prime} ; C^{\prime}, D\right) \\
+   &=:(a, b ; c, d)
+   \end{aligned}
+$$
+
+​		**Definition:** $(A, B ; C, D)_{X}$ ist das Doppelverhältnis von vier Punkten "gesehen von $X^{\prime \prime}$
+
+$$
+=\frac{[X, A, C][X, B, D]}{[X, A, D][X, B, C]}
+$$
+
+​		**==Satz==:**
+$$
+(A, B ; C, D)_{X}=\left(A^{\prime}, B^{\prime} ; C^{\prime}, D\right)_{X}
+$$
+
+4. Umgang mit $\infty$ - einige Rechenregeln
+   $$
+   \text { Rechenregeln: }\\
+   \begin{aligned}
+   &
+   &\frac{1}{0}=\infty \quad \frac{1}{\infty}=0 \quad \infty+1=\infty \quad \infty+\infty=\infty \quad a \cdot \infty=\infty
+   \end{aligned}
+   $$
+   
+   $$
+   \text{Nicht erlaubt:}\\
+   \frac{0}{0}=\text { undef } \quad \frac{\infty}{\infty}=\text { undef } \quad 0 \cdot \infty=\text { undef }
+   $$
+
+
+<h3 id = "sec4.4">Projektive Skalen</h3>
+
+> $(A, B ; C, D):=\frac{[A, C][B, D]}{[A, D][B, C]}$
+
+1. Spezielle Doppelverhältnisse
+   $$
+   \begin{aligned}
+   (A, B ; C, D)=0 & \Longrightarrow[A, C][B, D]=0 \\
+   & \Longrightarrow[A, C]=0 \text { oder }[B, D]=0 \\
+   & \Longrightarrow[A]=[C] \text { oder }[B]=[D]
+   \end{aligned}
+   $$
+
+   ---
+
+   $$
+   (A, B ; C, D)=\infty \Longrightarrow[A]=[D] \text { oder }[B]=[C]
+   $$
+
+   ---
+
+   $$
+   (A, B ; C, D)=1 \Longrightarrow[A]=[B] \text { oder }[C]=[D]
+   $$
+
+   ---
+
+   $$
+   (0, \infty ; x, 1)=x
+   $$
+
+
+
+<h3 id ="sec4.5">Harmonische Lage</h3>
+
+1. Vertauschen von Punkten im Doppelverhältnis
+   $$
+   \begin{aligned}
+   &(A, B ; C, D):=\frac{[A, C][B, D]}{[A, D][B, C]}\\
+   &(A, B ; C, D)=\lambda\\
+   &(\mathbf{B}, \mathbf{A} ; C, D)=1 / \lambda\\
+   &(A, B ; \mathbf{D},\mathbf{ C})=1 / \lambda\\
+   &(A, \mathbf{C} ; \mathbf{B}, D)=1-\lambda\\
+   &[A, B][C, D]-[A, C][B, D]+[A, D][B, C]=0\\
+   &\text { Grassmann-Plücker-Relation }\\
+   &(\underline{C, D} ; \underline{A, B})=\lambda
+   \end{aligned}
+   $$
+   
+   ---
+   
+2. 
+
+$$
+\begin{aligned}
+&6 \text { mögliche Werte: }\\
+&\begin{array}{llllll}
+\underbrace{\lambda}_{id} &\underbrace{ \frac{1}{\lambda}}_{a} & \underbrace{1-\lambda}_{b} &\underbrace{ 1-\frac{1}{\lambda}}_{ab} &\underbrace{ \frac{1}{1-\lambda}}_{ba} &\underbrace{ \frac{\lambda}{\lambda-1}}_{aba/bab}
+\end{array}\\
+
+\end{aligned}
+$$
+
+2. Definition von Harmonischer Lage
+
+   $(A, B ; C, D)=-1$
+   $(A, B ; D, C)=-1$
+   $(B, A ; C, D)=-1$
+   $(C, D ; A, B)=-1$
+
+   **==Definition==**: Das Paar von Paaren $\{\{A, B\},\{C, D\}\}$ heißt in harmonischer Lage, wenn $(A, B ; C ; D)=-1$.
+
+3. Example
+
+   ![image-20210208110747900](https://i.loli.net/2021/02/08/Pztiw7yLbje5Qdx.png)
+
+4. 
+
+   
 
