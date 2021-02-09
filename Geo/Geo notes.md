@@ -18,6 +18,8 @@
   - [Quadriken](#sec5.1)
   - [Kegelschnitt durch 5 Punkte](#sec5.2)
   - [Wo stand der Fotograph](#sec5.3)
+  - [rojektive Klassifikation](#sec5.4)
+  - [Polarität](#sec5.5)
 - 
 
 
@@ -929,4 +931,44 @@ $$
 
 
 <h3 id = "sec5.3">Wo stand der Fotograph</h3>
+
+<h3 id = "sec5.3">Projektive Klassifikation</h3>
+
+1. Projektive Transformation eines Kegelschnitts
+
+   Transformationen: $p \stackrel{\tau}{\longmapsto} M \cdot p$
+   $$
+   \begin{array}{l}
+   l \stackrel{\tau}{\longrightarrow}\left(M^{-1}\right)^{T} \cdot l \leftarrow \text { erhält Inzidenz 投影后的点在投影后的直线上} \\
+   A \stackrel{\tau}{\longrightarrow}\left(M^{-1}\right)^{T} \cdot A \cdot M^{-1} \leftarrow \text { erhält Inzidenz 投影后的点在投影后的圆锥曲线上}
+   \end{array}
+   $$
+   ![截屏2021-02-0913.27.13](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhka5z4u8j307m05qjs6.jpg)
+
+2. 点P在圆锥曲线A上：
+   $$
+   p^{T} \cdot A \cdot p = 0
+   $$
+
+3. 
+
+
+
+![截屏2021-02-0913.42.17](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhkg4938jj30sc0ggdq6.jpg)
+
+![截屏2021-02-0913.44.26](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhkicqzg5j30wa06cgp1.jpg)![截屏2021-02-0913.49.23](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhkni2rj6j30xi0buahf.jpg)
+
+![截屏2021-02-0913.53.07](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhkrduf2mj30wo0cctgn.jpg)
+
+
+
+4. Klassifikation des reellen nicht-degenerierten Kegelschnitts
+
+   ![截屏2021-02-0913.56.01](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhkuk7znuj30vy0fqqb5.jpg)
+
+
+
+<h3 id = "sec5.5">Polarity （Exkurs?）</h3>
+
+1. Die Polaritätsabbildung 
 
