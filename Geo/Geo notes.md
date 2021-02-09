@@ -14,7 +14,10 @@
   - [Doppelverhältnisse](#sec4.3)
   - [Projektive Skalen](#sec4.4)
   - [Harmonische Lage](#sec4.5)
-- KegelSchinitte
+- [KegelSchinitte](#sec5)
+  - [Quadriken](#sec5.1)
+  - [Kegelschnitt durch 5 Punkte](#sec5.2)
+- 
 
 
 
@@ -804,7 +807,77 @@ $$
 
    ![image-20210208110747900](https://i.loli.net/2021/02/08/Pztiw7yLbje5Qdx.png)
 
-4. 
+<h1 id ="sec5.1">Kegelschnitte 圆锥截面</h1>
 
+<h3 id = "sec5.1">Quadriken 四边形</h3>
+
+Lösungsgebilde 2-dimensionaler quadratischer Gleichungen:
+
+Sei $a, b, c, d, e, f \in \mathbb{R}$ gegeben. Betrachte
+$$
+\begin{array}{l}
+\qquad a x^{2}+b y^{2}+2 c x y+2 d x+2 e y+f=0 \\
+\textbf  {etwas kompakter: } \left(\begin{array}{lll}
+x & y & 1
+\end{array}\right)\left(\begin{array}{lll}
+a & c & d \\
+c & b & e \\
+d & e & f
+\end{array}\right)\left(\begin{array}{l}
+x \\
+y \\
+1
+\end{array}\right)=0 \\
+\quad\quad\quad\quad\quad\quad\quad \iff\quad\quad\quad\quad p^{T} \cdot A \cdot p=0
+\end{array}
+$$
+
+
+定义: 
+$$
+\begin{aligned}
+&\textbf{quadratische Form: }\quad Q_{A}(p):=p^{T} \cdot \underbrace{A}_{\begin{array}{c}
+\text {kann symmetrisch} \\
+\text {gewahlt werden}
+\end{array}} \cdot p=0
+
+\end{aligned}
+$$
+**Für nicht-symmetrische** $A$:
+$$
+Q_{\frac{A+A^{T}}{2} }(p)=Q_{A}(p)
+$$
+**homogen:** 
+$$
+\left(\begin{array}{lll}x & y & z\end{array}\right)\left(\begin{array}{lll}a & c & d \\ c & b & e \\ d & e & f\end{array}\right)\left(\begin{array}{l}x \\ y \\ z\end{array}\right)=0
+$$
+
+1. Definition von Quadriken
+
+   **Definition**: Die Menge aller Punkte $p^{T}=(x, y, z)^{T}$, die die Gleichung
+   $$
+   \begin{aligned}
+   &\iff a x^{2}+b y^{2}+2 c x y+2 d x z+2 e y z+f z^{2}=0\\
+   &\iff \begin{array}{c}
+   \left(\begin{array}{lll}
+   x & y & z
+   \end{array}\right)\left(\begin{array}{lll}
+   a & c & d \\
+   c & b & e \\
+   d & e & f
+   \end{array}\right)\left(\begin{array}{l}
+   x \\
+   y \\
+   z
+   \end{array}\right)=0 \end{array}\\
+   &\iff Q_{A}(p):=p^{T} \cdot A \cdot p=0
    
+   \end{aligned}
+   $$
+   erfüllen, nennt man eine Quadrik.
+
+
+
+
+<h3 id = "sec5.2">Kegelschnitt durch 5 Punkte</h3>
 
