@@ -17,6 +17,7 @@
 - [KegelSchinitte](#sec5)
   - [Quadriken](#sec5.1)
   - [Kegelschnitt durch 5 Punkte](#sec5.2)
+  - [Wo stand der Fotograph](#sec5.3)
 - 
 
 
@@ -807,7 +808,7 @@ $$
 
    ![image-20210208110747900](https://i.loli.net/2021/02/08/Pztiw7yLbje5Qdx.png)
 
-<h1 id ="sec5.1">Kegelschnitte 圆锥截面</h1>
+<h1 id ="sec5.1">Kegelschnitte 圆锥曲线</h1>
 
 <h3 id = "sec5.1">Quadriken 四边形</h3>
 
@@ -880,4 +881,52 @@ $$
 
 
 <h3 id = "sec5.2">Kegelschnitt durch 5 Punkte</h3>
+
+![截屏2021-02-0910.20.10](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhem0qq5nj30wq098whg.jpg)
+
+**==Satz==**: Durch 5 verschiedene Punkte $A, B, C, D, E$ im $\mathbb{R} \mathbb{P}^{2},$ von denen keine 4 auf einer Geraden liegen, geht immer (genau ein) Kegelschnitt.
+
+![截屏2021-02-0910.46.58](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhfdqya5ej30x80c047x.jpg)
+
+1. Degenerierter Kegelschnitt
+
+   - der in zwei Geraden zerfällt:
+
+     ![截屏2021-02-0910.24.10](https://tva1.sinaimg.cn/large/008eGmZEgy1gnheq07fqoj30dk0demzb.jpg)
+     $$
+     \begin{array}{l}
+     \left(x r_{1}+y s_{1}+z t_{1}\right)=0 \text { oder }\left(x r_{2}+y s_{2}+z t_{2}\right)=0 \\
+     \Longleftrightarrow\left(x r_{1}+y s_{1}+z t_{1}\right) \cdot\left(x r_{2}+y s_{2}+z t_{2}\right)=0 \\
+     \Longleftrightarrow\langle P, l\rangle \cdot\langle P, m\rangle=0 \\
+     \Longleftrightarrow\langle P, A \times B\rangle \cdot\langle P, C \times D\rangle=0 \\
+     \Longleftrightarrow[P, A, B] \cdot[P, C, D]=0
+     \end{array}
+     $$
+     
+
+2. Bedingung für 6 Punkte auf einem gemeinsamen Kegelschnitt
+   $$
+   \begin{aligned}
+   &[A C E][B D E][A D P][B C P]\\
+   &-[A D E][B C E][A C P][B D P]=0\\
+   &\frac{[A C E][B D E]}{[A D E][B C E]}=\frac{[A C P][B D P]}{[A D P][B C P]}
+   \end{aligned}
+   $$
+
+   $$
+   (A, B ; C, D)_{E}=(A, B ; C, D)_{P}
+   $$
+
+   > Der Punkt $P$ sieht $A, B, C, D$ unter dem selben Doppelverhältnis wie $E$.
+
+   > Ein Kegelschnitt ist charakterisiert durch vier Punkte $A, B, C, D$ und ein Doppelverhältnis $\lambda$.
+
+3. Eindeutigkeit eines Kegelschnitts durch 5 Punkte
+
+   **==Satz==**: Durch 5 Punkte $A, B, C, D, E$ im $\mathbb{R} \mathbb{P}^{2},$ von denen keine **drei** auf
+   einer Geraden liegen, geht immer (genau ein) Kegelschnitt
+
+
+
+<h3 id = "sec5.3">Wo stand der Fotograph</h3>
 
