@@ -1,30 +1,54 @@
-#### Table of Contents
+$\forall P: P \times P = 0$
+
+#### Table of Contents 
 
 - [Die reelle projektive Ebene](#sec1)
   - [Punkte und Geraden im R^2](#sec1.1)
   - [Inzidenz, Join und Meet](#sec1.2)
+  
 - [projektive Transformationen](#sec2)
   - [Die Rolle von Matrix](#sec2.1)
   - [Projektive Transformationen berechnen](#sec2.2)
+  
 - [Dualitaet](#sec3)
+  
   - [Symmetrie zwischen Punkten und Geraden](#sec3.1)
+  
 - [Die Projektive Gerade](#sec4)
   - [Homogene Koordinaten im RP^1](#sec4.1)
   - [Perspektiven und Transformationen](#sec4.2)
   - [Doppelverhältnisse](#sec4.3)
   - [Projektive Skalen](#sec4.4)
   - [Harmonische Lage](#sec4.5)
+  
 - [KegelSchinitte](#sec5)
+  
   - [Quadriken](#sec5.1)
   - [Kegelschnitt durch 5 Punkte](#sec5.2)
   - [Wo stand der Fotograph](#sec5.3)
   - [rojektive Klassifikation](#sec5.4)
   - [Polarität](#sec5.5)
-- 
+  
+- [Komplexe Zahlen und Geometrie](#sec6)
+
+  - [Geometrie komplexer Zahlen](#sec6.1)
+  - [Geometrie komplexer Rechenoperationen](#sec6.2)
+  - [Die Punlte I und j](#sec6.3)
+  - [Kozirkularitaet testen](#sec6.4)
+  - [Kreise und I und J](#sec6.5)
+  
+- [Euklidische Geometrie](#sec7)
+  
+  - [senkrecht stehen und Winkel](#sec7.1)
+  - [Elementargeometrie](#sec7.2)
+  - [Transformationen](#sec7.3)
+  - [Ausblick: Cayley-Klein Geometrien](#sec7.4)
+  
+  
 
 
 
-<h1 id="sec1">Die reelle projektive Ebene</h1>
+<h1 style="color:green" id="sec1">Die reelle projektive Ebene</h1>
 
 <h3 id = "sec1.1">Punkte und Geraden im R^2</h3>	
 
@@ -260,7 +284,7 @@ $$
 
     
 
-<h1 id = "sec2">Projektive Transformationen</h1>
+<h1 style="color:green" id = "sec2">Projektive Transformationen</h1>
 
 <h3 id = "sec2.1">Die Rolle von Matrizen</h3>
 
@@ -431,7 +455,7 @@ $\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\
 
 
 
-<h1 id = "sec3">Dualitaet</h1>
+<h1 style="color:green" id = "sec3">Dualitaet</h1>
 
 <h3 id ="sec3.1">Symmetrie zwischen Punkten und Geraden</h3>
 
@@ -449,7 +473,7 @@ $\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\
 
 4. 
 
-<h1 id = "sec4">Die Projektive Gerade</h1>
+<h1 style="color:green" id = "sec4">Die Projektive Gerade</h1>
 
 <h3 id = "sec4.1">Homogene Koordinaten im RP^1</h3>
 
@@ -653,7 +677,7 @@ $\begin{aligned} \tau_{M}: \mathscr{P}_{\mathbb{R}} & \rightarrow \mathscr{P}_{\
 
 1. Definition
 
-   Definition: Seien $A, B, C, D \in \mathbb{R}^{2}-\{\mathbf{0}\}$, deren Doppelverhältnis ist definiert als:
+   **Definition**: Seien $A, B, C, D \in \mathbb{R}^{2}-\{\mathbf{0}\}$, deren Doppelverhältnis ist definiert als:
    $$
    (A, B ; C, D):=\frac{[A, C][B, D]}{[A, D][B, C]}
    $$
@@ -810,7 +834,7 @@ $$
 
    ![image-20210208110747900](https://i.loli.net/2021/02/08/Pztiw7yLbje5Qdx.png)
 
-<h1 id ="sec5.1">Kegelschnitte 圆锥曲线</h1>
+<h1 style="color:green" id ="sec5">Kegelschnitte 圆锥曲线</h1>
 
 <h3 id = "sec5.1">Quadriken 四边形</h3>
 
@@ -971,4 +995,462 @@ $$
 <h3 id = "sec5.5">Polarity （Exkurs?）</h3>
 
 1. Die Polaritätsabbildung 
+
+<h1 id = "sec6" style="color:green"> Komplexe Zahlen und Geometrie</h1>
+
+<h3 id = "sec6.1">Geometrie komplexer Zahlen</h3>
+
+1. Wiederholung der Grundlagen komplexer Zahlen
+
+   $\mathbb{C}=\mathbb{R}+i \mathbb{R}$
+
+   <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnhnsc33w8j30cs0aogmx.jpg" alt="截屏2021-02-0915.37.49" style="zoom:33%;" />
+
+   **Imaginäre Einheit: **
+   $$
+   i^{2}=-1
+   $$
+   
+   **Komplexe Zahlen:**
+   $$
+   a, b \in \mathbb{R} \\ 
+   a+i b \in \mathbb{C}
+   $$
+
+   
+
+   > 1. C ist ein Körper!
+   >
+   > 2. Elemente aus $\mathbb{C}$ können in $\mathbb{R}^{2}$ interpretiert werden!
+
+2. Wiederholung projektiver Geraden über einem beliebigen Körper
+
+   ![截屏2021-02-0915.44.33](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhnzc98nyj31420jswtm.jpg)
+
+3. RP^1 and CP^1
+
+   ![截屏2021-02-0915.51.55](https://tva1.sinaimg.cn/large/008eGmZEgy1gnho70ajfwj30x60hg49w.jpg)
+
+   ![截屏2021-02-0915.57.02](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhocbyc9fj30ws0ekdoi.jpg)
+
+   **Raum der Punkte:**
+   $$
+   \mathbb{C P}^{1}:=\frac{\mathbb{C}^{2}-\{\boldsymbol{0}\}}{\mathbb{C}-\{0\}}
+   $$
+   **Standard Einbettung:**
+   $$
+   \begin{aligned}
+   \mathbb{C} & \rightarrow \mathbb{C} \mathbb{P}^{1} \\
+   z & \mapsto\left[\left(\begin{array}{l}
+   z \\
+   1
+   \end{array}\right)\right]
+   \end{aligned}
+   $$
+   **Punkt im Unendlichen:**
+   $$
+   \infty=\left[\left(\begin{array}{l}
+   1 \\
+   0
+   \end{array}\right)\right]
+   $$
+   **Zwei Interpretationen von CP^1:**
+
+   - reell 2-dimensionales geometrisches Objekt
+   - komplex eindimensionale Projektive Gerade
+
+4. Unterschied von CP^1 und RP^2
+
+   $\mathbb{C P}^{1}$: Ebene $\mathbb{R}^{2}$ plus ein Punkt im Unendlichen
+
+   $\mathbb{R} \mathbb{P}^{2}$: Ebene $\mathbb{R}^{2}$ plus eine Gerade im Unendlichen
+
+5. Projektive Transformationen im CP^1
+
+   $\tau: \mathbb{C} \mathbb{P}^{1} \rightarrow \mathbb{C P}^{1}$
+   $\tau:\left[\left(\begin{array}{l}x \\ y\end{array}\right)\right] \rightarrow\left[\left(\begin{array}{ll}a & b \\ c & d\end{array}\right)\left(\begin{array}{l}x \\ y\end{array}\right)\right]$
+
+   <span style="color:gray">(Möbius Transformationen)</span>
+
+   <span style="color:gray">(Sechs reelle Freiheitsgrade)</span>
+
+   $z \mapsto \frac{a z+b}{c z+d}$ 	<span style="color:gray;font-size:13px">nicht-homogene Version</span>
+
+
+
+<h3 id ="sec6.2">Geometrie komplexer Rechenoperationen</h3>
+
+1. Polarkoordinaten
+
+   ![截屏2021-02-0919.54.55](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhv7udcyaj30ea0e6ju9.jpg)
+
+   Kartesische Darstellung:
+   $$
+   z=a+i b
+   $$
+   Polarkoordinaten:
+   $$
+   \begin{aligned}  \quad z &=a+i b \\ &=r(\cos (\varphi)+i \sin (\varphi))\\
+   &=r e^{i \varphi}\end{aligned}
+   $$
+
+2. Komplexe Rechenoperationen geometrisch interpretiert
+
+   - Addition <span style="color:gray;font-size:10px">Verschiebung</span>
+
+   <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnhvyy8s6lj30b40aowg6.jpg" alt="截屏2021-02-0920.20.59" style="zoom:33%;" />
+   $$
+   \begin{aligned}
+   z_{1} &=a_{1}+i b_{1} \\
+   z_{2} &=a_{2}+i b_{2} \\
+   z_{1}+z_{2} &=\left(a_{1}+a_{2}\right)+i\left(b_{1}+b_{2}\right)
+   \end{aligned}
+   $$
+
+   - Multiplikation <span style="color:gray;font-size:10px">Drehstreckung</span>
+
+     <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnhw2lgkmej30bk0aumz8.jpg" alt="截屏2021-02-0920.24.29" style="zoom:33%;" />
+     $$
+     \begin{aligned}
+     z_{1} &=r_{1} e^{i \varphi_{1}} \\
+     z_{2} &=r_{2} e^{i \varphi_{2}} \\
+     z_{1} \cdot z_{2} &=r_{1} r_{2} e^{i\left(\varphi_{1}+\varphi_{2}\right)}
+     \end{aligned}
+     $$
+
+   - Konjugation <span style="color:gray;font-size:10px">Spiegelung</span>
+     
+     <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnhw44ah5cj308e09o0tm.jpg" alt="截屏2021-02-0920.25.56" style="zoom:33%;" />
+     $$
+     \begin{array}{l}
+     z=a+i b \\
+     \bar{z}=a-i b
+     \end{array}
+     $$
+
+3. Algebraisches Überprüfen geometrischer Eigenschaften
+
+   ![截屏2021-02-0920.55.11](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhwyjoil6j30x40ggal7.jpg)
+
+4. Satz vom Fasskreisbogen
+
+   Wie kann man testen, ob vier Punkte auf einem Kreis liegen?
+
+   <img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnhx3xjlgxj30cq0cuady.jpg" alt="截屏2021-02-0921.00.20" style="zoom:33%;" />
+
+5. Test auf Kozirkularität同圆度
+
+   ![截屏2021-02-0921.09.36](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhxdk5jkgj30xa0fatk4.jpg)
+
+   **==Satz==**: Vier Punkte $A, B, C, D$ in $\mathbb{C} \mathbb{P}^{1}$ sind kozirkular oder kollinear g.d.w $(A, B ; C, D) \in \mathbb{R}$
+
+6. Kreise und Transformationen
+
+   **==Satz==**:  $\mathrm{CP}^{1}$ Transformationen bilden  "Kreise und Geraden" in "Kreise und Geraden" ab.
+
+   >  Beweis: $(A, B ; C, D) \in \mathbb{R}$ ist projektiv invariant
+
+<h3 id ="sec6.3">Die Punkte I und J</h3>
+
+![截屏2021-02-0921.30.53](https://tva1.sinaimg.cn/large/008eGmZEgy1gnhxzpjzjlj30wq0hgtmv.jpg)
+
+Nächstes Ziel: Verknüpfung von $\mathbb{R} \mathbb{P}^{2}$ und $\mathbb{C} \mathbb{P}^{1}$
+**Vorteile $\mathbb{R} \mathbb{P}^{2}$**：
+$$
+\text{Punkte, Geraden, Inzidenz, Kegelschnitte sind gut repräsentiert}
+$$
+**Vorteile** $\mathbb{C} \mathbb{P}^{1}$:
+$$
+\text { Kozirkularität gut repräsentiert }
+$$
+Ziel: Überlagerung der beiden Welten
+
+<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gnhyhr8e2lj30bk0gggon.jpg" alt="截屏2021-02-0921.48.15" style="zoom:50%;" />
+
+将两个坐标系“合并”：
+
+**Die Punkte I und J**
+$$
+I=\left(\begin{array}{c}
+-i \\
+1 \\
+0
+\end{array}\right)， \mathrm{J}=\left(\begin{array}{l}
+i \\
+1 \\
+0
+\end{array}\right)
+$$
+
+$$
+P=\left(\begin{array}{c}
+a_{1} \\
+b_{1} \\
+1
+\end{array}\right) \quad Q=\left(\begin{array}{c}
+a_{2} \\
+b_{2} \\
+1
+\end{array}\right)
+$$
+
+$$
+\begin{aligned}
+\quad[P, Q, I]=\operatorname{det}\left(\begin{array}{ccc}
+a_{1} & a_{2} & -i \\
+b_{1} & b_{2} & 1 \\
+1 & 1 & 0
+\end{array}\right) &=a_{2}-i b_{1}-a_{1}+i b_{2} \\
+&=-\left(a_{1}+i b_{1}\right)+\left(a_{2}+i b_{2}\right) \\
+&=z_{Q}-z_{p} \\
+&=\operatorname{det}\left(\begin{array}{cr}
+z_{Q} & z_{P} \\
+1 & 1
+\end{array}\right)\\
+&=-[\widetilde{P}, \widetilde{Q}]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\text { Analog: }\\
+&[P, Q, J]=\cdots=-\overline{[\widetilde{P}, \widetilde{Q}]}
+\end{aligned}
+$$
+
+<h3 id = "sec6.3">Kozirkularitaet testen</h3>
+
+<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gni3zwwtetj30es0i6tff.jpg" alt="截屏2021-02-1000.58.39" style="zoom:33%;" />
+$$
+\begin{aligned}
+& \widetilde{A}, \widetilde{B}, \widetilde{C}, \widetilde{D} \text { kozirkular } \\
+\Longleftrightarrow &(\widetilde{A}, \widetilde{B} ; \widetilde{C}, \widetilde{D}) \in \mathbb{R} \\
+\Longleftrightarrow & \frac{[\widetilde{A}, \widetilde{C}][\widetilde{B}, \widetilde{D}]}{[\widetilde{A}, \widetilde{D}][\widetilde{B}, \widetilde{C}]} \in \mathbb{R}\\
+\Longleftrightarrow & \frac{[\widetilde{A}, \widetilde{C}][\widetilde{B}, \widetilde{D}]}{[\widetilde{A}, \widetilde{D}][\widetilde{B}, \widetilde{C}]} = \frac{\overline{[\widetilde{A}, \widetilde{C}][\widetilde{B}, \widetilde{D}]}}{\overline{[\widetilde{A}, \widetilde{D}][\widetilde{B}, \widetilde{C}]}}\\
+\Longleftrightarrow & \frac{[A, C, I][B, D, I]}{[A, D, I][B, C, I]}=\frac{[A, C, J][B, D, J]}{[A, D, J][B, C, J]}\\
+\Longleftrightarrow &(A, B ; C, D)_{I}=(A, B ; C, D)_{J}
+\end{aligned}
+$$
+
+> Kreise sind Kegelschnitte durch I und J
+
+<h3 id = "sec6.5">Kreise und I und J</h3>
+
+
+
+![截屏2021-02-1001.06.59](https://tva1.sinaimg.cn/large/008eGmZEgy1gni48krrutj313w0m0asu.jpg)
+
+<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gni4971qwtj30mo0b8n2v.jpg" alt="截屏2021-02-1001.07.36" style="zoom: 50%;" />
+
+
+
+<h1 style="color: green" id = "sec7">Euklidische Geometrie</h1>
+
+<h3 id = "sec7.1">senkrecht stehen und Winkel</h3>
+
+1. 
+
+   <img src="https://i.loli.net/2021/02/10/qDhF5r4dEVlZ3Y1.png" alt="截屏2021-02-1010.31.47" style="zoom:33%;" />
+   $$
+   \begin{array}{l}
+   A=\left(\begin{array}{c}
+   A_{x} \\
+   A_{y} \\
+   1
+   \end{array}\right) \\
+   \widetilde{A}=\left(\begin{array}{c}
+   A_{x}+i A_{y} \\
+   1
+   \end{array}\right)=\left(\begin{array}{c}
+   z_{A} \\
+   1
+   \end{array}\right)
+   \end{array}
+   $$
+
+   $$
+   \begin{aligned}
+   \textbf{senkrecht stehen: }\quad \frac{z_{A}-z_{B}}{z_{A}-z_{C}} \in i \mathbb{R} &\Longleftrightarrow \frac{z_{A}-z_{B}}{z_{A}-z_{C}}=-\overline{\left(\frac{z_{A}-z_{B}}{z_{A}-z_{C}}\right)}\\
+   
+   
+   &\Longleftrightarrow \frac{[\widetilde{A}, \widetilde{B}]}{[\widetilde{A}, \widetilde{C}]}=-\frac{\overline{[\widetilde{A}, \widetilde{B}]}}{[\widetilde{A}, \widetilde{C}]} \\
+   &\Longleftrightarrow=\frac{[A, B, I]}{[A, C, I]}=-\frac{[A, B, J]}{[A, C, J]} \\
+   &\Longleftrightarrow \frac{[A, B, I][A, C, J]}{[A, C, I][A, B, J]}=-1 \\
+   &\Longleftrightarrow(B, C ; I, J)_{A}=-1
+   
+   \end{aligned}
+   $$
+   
+    <img src="https://i.loli.net/2021/02/10/5w9WrHeFktUXTRp.png" alt="截屏2021-02-1011.44.19" style="zoom:50%;" />
+   $$
+   l \perp m \Longleftrightarrow(L, M ; I, J)=-1
+   $$
+   **Spezialfall der Formel von Laguerre:**
+   $$
+   \angle(l, m)=\frac{1}{2 i} \ln ((L, M ; I, J))
+   $$
+   
+2. Formel von Laguerre
+
+   ![截屏2021-02-1012.30.36](https://i.loli.net/2021/02/10/sEpAjq4SzHMgWef.png)
+
+3.  Eigenschaften von Winkeln
+
+   ![截屏2021-02-1014.50.39](https://i.loli.net/2021/02/10/WeIHBX7kPD5OuYF.png)
+
+4. Senkrecht stehen als Sonderfall
+   $$
+   \begin{aligned}{l}
+   &\angle(l, m)=\frac{1}{2 i} \ln ((L, M ; I, J)) \\
+   &\Longrightarrow \pi / 2=\frac{1}{2 i} \ln ((L, M ; I, J)) \\
+   &\Longrightarrow i \pi=\ln ((L, M ; I, J)) \\
+   &\Longrightarrow e^{i \pi}=(L, M ; I, J) \\
+   &\Longrightarrow -1=(L, M ; I, J)
+   \end{aligned}
+   $$
+
+
+
+<h3 id = "sec7.2">Elementargeometrie</h3>
+
+> ==**Metasatz**==: Euklidische Geometrie ist Projektive Geometrie zusammen mit I und J.
+
+1. Verknüpfung konjugierter Elemente
+
+   ![截屏2021-02-1016.15.41](https://i.loli.net/2021/02/10/tw4NsraVgf7Tld5.png)
+
+2. Komplexe Zahlen und RP^2
+
+   
+
+3. Spiegelung an einer Geraden
+
+   ![截屏2021-02-1016.46.27](https://i.loli.net/2021/02/10/st6YFMkj4XvrScO.png)
+
+4. Mittelpunkt eines Kreises mit Animation
+
+   <img src="https://i.loli.net/2021/02/11/ZM8cKAnjfrUQe1h.png" alt="截屏2021-02-1018.16.17" style="zoom:50%;" />
+
+5. Brennpunkten焦点 eines Kegelschnittes
+
+   <img src="https://i.loli.net/2021/02/11/p9ua6tAeJflLsjO.png" alt="截屏2021-02-1020.16.20" style="zoom:50%;" />
+
+   Konstruktion von Brennpunkte:
+
+   ![截屏2021-02-1020.27.42](https://i.loli.net/2021/02/11/AC4HPTxebRQsSXr.png)
+
+6. Satz von Pascal und sein Duales
+
+   ![截屏2021-02-1020.45.19](https://i.loli.net/2021/02/11/DlyqMWv4PtGj8ON.png)
+
+
+
+<h3 id = "sec7.3">Transformation</h3>
+
+1. Wiederholung zur Winkelmessung
+
+   ![截屏2021-02-1021.39.32](https://i.loli.net/2021/02/11/GC9tRuEKg1ixSl7.png)
+
+2. Längen
+
+   ![截屏2021-02-1022.29.03](https://i.loli.net/2021/02/11/moQ253HYRMfAuVC.png)
+
+
+
+3. Messe
+
+   ![截屏2021-02-1023.50.28](https://i.loli.net/2021/02/11/fBnR2cVMpGTtJwH.png)
+
+4. Transformationen, unter denen Längen und Winkel erhalten bleiben (不变化)
+
+   **==Satz:==** Transformationen die I und J als Paar festlassen, lassen Absolutbeträge von Winkeln und Längenverhältnissen invariant.
+
+   ![截屏2021-02-1100.24.36](https://i.loli.net/2021/02/11/IHcneD6KEvjMmOL.png)
+
+5. Was sind die Transformationen, die I und J festlassen?
+
+   - Fall 1: $I \mapsto I$ und $J \mapsto J$.
+     $$
+     \begin{array}{l}
+     \left(\begin{array}{lll}
+     a & b & p \\
+     c & d & q \\
+     0 & 0 & r
+     \end{array}\right) \cdot\left(\begin{array}{l}
+     i \\
+     1 \\
+     0
+     \end{array}\right)=\lambda\left(\begin{array}{l}
+     i \\
+     1 \\
+     0
+     \end{array}\right) \\
+     i \cdot a+1 \cdot b=i \cdot \lambda \\
+     i \cdot c+1 \cdot d=\lambda
+     \end{array}
+     $$
+
+     $$
+     \Longrightarrow a=d ; b=-c
+     $$
+
+   <img src="https://i.loli.net/2021/02/11/eNAmz8IwhUgKvpb.png" alt="截屏2021-02-1101.01.42" style="zoom:50%;" />
+
+   - Fall 2: $I \mapsto J$ und $J \mapsto I$.
+
+   <img src="/Users/taoxiang/Library/Application Support/typora-user-images/截屏2021-02-1101.22.32.png" alt="截屏2021-02-1101.22.32" style="zoom:50%;" />
+
+<h3 id ="sec7.4">Ausblick: Cayley-Klein Geometrien</h3>
+
+1. Rückblick: Klassifikation von Kegelschnitten
+
+   ![截屏2021-02-1102.47.43](https://i.loli.net/2021/02/11/OQdWjvc5pA1eFki.png)
+
+   ![截屏2021-02-1102.50.54](https://i.loli.net/2021/02/11/ip8nLU6cZTo2xSf.png)
+
+2. Die drei Fälle der Doppelgeraden
+
+   ![截屏2021-02-1103.13.08](https://i.loli.net/2021/02/11/K4QzrEaqS7kceT3.png)
+
+3. Kegelschnittklassifikation
+
+   ![截屏2021-02-1103.22.38](/Users/taoxiang/Library/Application Support/typora-user-images/截屏2021-02-1103.22.38.png)
+
+4. Allgemeine Maßbestimmung bzgl. eines nicht-degenrierten Kegelschnitts
+
+   **Cayley-Klein Geometrien**
+
+   ![截屏2021-02-1108.10.16](https://i.loli.net/2021/02/11/yTZ316FX5CMLsm2.png)
+
+   
+
+5. Drei Faelle der Messung
+
+   ![截屏2021-02-1108.14.19](https://i.loli.net/2021/02/11/6ZYqCHUVcxRWbTB.png)
+
+6. Transformationen von Cayley-Klein Geometrien
+
+   ![截屏2021-02-1108.21.26](https://i.loli.net/2021/02/11/BX3TZxelrz6GA7Q.png)
+
+7. Elementargeometrie in Cayley-Klein Geometrien
+
+   ![截屏2021-02-1108.24.33](https://i.loli.net/2021/02/11/xSYIRd2pvseVFP9.png)
+
+8. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:gray;font-size:10px"></span>
 
