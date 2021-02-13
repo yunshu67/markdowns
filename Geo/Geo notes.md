@@ -1398,7 +1398,7 @@ $$
 
    - Fall 2: $I \mapsto J$ und $J \mapsto I$.
 
-   <img src="/Users/taoxiang/Library/Application Support/typora-user-images/截屏2021-02-1101.22.32.png" alt="截屏2021-02-1101.22.32" style="zoom:50%;" />
+   <img src="https://i.loli.net/2021/02/13/Rhjo8z6OpUiDTsA.png" alt="截屏2021-02-1101.22.32" style="zoom:50%;" />
 
 <h3 id ="sec7.4">Ausblick: Cayley-Klein Geometrien</h3>
 
